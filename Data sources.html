@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +11,17 @@
             background-color: #e8f0fe;
         }
 
-        .color-column {
-            height: 100vh;
+
+        .padding {
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
-        #project-purpose {
-            background-color: #dee2e6;
-            color: #495057;
-        }
 
-        #questions-section {
-            background-color: #ced4da;
-            color: #495057;
-        }
     </style>
     <title>Data Sources</title>
 </head>
+
 <body>
     <div id="carousel-ID" class="carousel slide" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
@@ -40,15 +35,39 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h1 class="text-center mb-4">Data Sources</h1>
-                <p class="lead">
-                    include our data sets and maybe some previews of our data sets
-                </p>
+                <h1 class="text-center mb-4 custom-padding">Data Sources</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-2 no-padding">
+        <div class="row no-gutters">
+            <div class="col-md-6 custom-padding">
+                <h1>Poverty Data</h1>
+                <p class="custom-paragraph">This is a preview of the much larger data set containing data about Chicago zip codes. It includes variables such as income levels, race demographics, households composition, etc. To interact and view the full data set, click on the image! </p>
+            </div>
+            <div class="col-md-6 custom-padding">
+                <a href="https://nd4-my.sharepoint.com/:x:/g/personal/vsalaza2_nd_edu/EYhewz-I1ApFqVBO2KYFzfIBxgfoj1XajuJmbD0Kee_-Ew?e=HqHTKg">
+                    <img src="PovertyData.png" class="img-fluid fill-space" alt="Poverty Data">
+                </a>
+            </div>
+        </div>
+    
+        <div class="my-4"></div>
+    
+        <div class="row no-gutters">
+            <div class="col-md-6 custom-padding">
+                <a href="https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t/data">
+                    <img src="CPSData.png" class="img-fluid fill-space" alt="Poverty Data">
+                </a>
+            </div>
+            <div class="col-md-6 custom-padding">
+                <h1>Chicago Public School Data</h1>
+                <p class="custom-paragraph">This is a preview of the much larger data set containing data about Chicago public schools. It includes variables such as parent engagement, test scores, safety scores, etc. To interact and view the full data set, click on the image! </p>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
-
-
