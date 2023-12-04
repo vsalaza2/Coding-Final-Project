@@ -49,11 +49,75 @@
             <div class="col-md-8 offset-md-2">
                 <h1 class="text-center mb-4">Visualizations and Insights</h1>
                 <p class="lead">
-                    include our interactive maps and graphs and specific insights under each one.
+                    The visulizations created from the data sources offer insights on the relationship between schools in Chicago and demographics of the area the school is located in, focusing mainly on how the poverty of the area affects schools. 
                 </p>
             </div>
         </div>
     </div>
+    <div class='my-5'></div>
+    <h2>Public Schools in Chicago</h2>
+    <p>This interactive visualization shows where public schools in Chicago are located. The name of each school can be found by clicking on the location icon. 
+        The map shows that the vast majority of public schools in Chicago are elementary schools, with the next most being high schools. There are very few public 
+        middle schools in comparision. Based on the map, it appears that there is a somewhat even distribution of schools among the Chicago; however, there is a clear 
+        lack of schools near Millenium Park and the Loop. Zooming in further to the map, this area is home to the Chicago campus of Northwestern
+        and the University of Illinois at Chicago. This area of the city thus likely has a younger demographic and is a popular tourist spot, which is why there are 
+        fewer elementary/middle/high schools. 
+    </p>
+   
+    <iframe src="schools_map.html" width="800" height="600" frameborder="0" class="mx-auto d-block" dir="" allowfullscreen></iframe>
+    <div class='py-3 my-4'></div>
+    <h2>Schools by Poverty Levels</h2>
+    <p>This interactive visualization breaks the map of Chicago into police wards and shows the poverty level of each ward (represented by the color). The dark gray color represents missing data from that particular ward. The blue circles represent the number of schools and the average location of the schools in the ward,
+        with larger circles signifying more schools. It appears that there are larger circles in wards with darker colors, suggesting that there are more schools in the poorer wards. This makes sense because the data only contains public schools, meaning that
+        there are potentially more private schools in the wealthier wards. While the previous map showing the location of each school in Chicago appeared to illustrate a somewhat even spread among the city, this map shows that there is a difference between each ward. 
+        Another insight that can be drawn from this map is that the north side of Chicago appears to have overall lower rates of poverty than the central and south sides. 
+    </p>
+    <iframe src="poverty_map.html" width="800" height="600" class="mx-auto d-block" frameborder="0"></iframe>
+    <div class='py-3 my-4'></div>
+    <h3>School Ratings</h3>
+    <p>
+        Based on the survey administered to students and teachers, schools were rated and assigned scores based on a varity of characteristics, including safety, environment and performance.  
+    </p>
+    <div class='my-5'></div>
+    <div class="row">
+       <div class="col-md-7">
+          <p>
+            The scatter plot illustrates two of these survey results, plotting the Environemnt Score of each school against the school's Safety Score.
+            The graph illustrates a moderate positive corrlation between the two dimensions. This suggests that while there are likely many other factors that 
+            go into the overall perceived environment of a school, the the perceived safety of the school plays a role. 
+          </p>
+       </div>
+       <div class="col"><iframe src="safety_vs_environment_page.html" width="500" height="400" frameborder="0"></iframe></div>
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+    </div>
+    <div class='my-5'></div>
+    <div class="row">
+        <div class="col"><iframe src="safety_vs_poverty_page.html" width="500" height="400" frameborder="0"></iframe></div>
+        <div class="col-md-7">
+            <p>
+                Combining the poverty data with the results of the school surveys, the bar chart shows how the average safety score of the schools 
+                within each zip code tend to vary with the poverty rate of the zip code. There appears to be a negetive trend in the relationship between safety score and 
+                poverty rate, meaning that zip codes with an average lower safety score tend to be in areas with a higher poverty rate. This illustrates how the demographics of 
+                the surrounding area factor into how schools in that area are perceived. 
+            </p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+
+    <div class='my-5'></div>
+    <div class="row">
+        <div class="col-md-7">
+           <p>
+             Again studying poverty rates, this visualization plots the poverty rates for schools with the same CPS Performance Policy Status, with Level 1 indicating the highest performing 
+             schools, and Level 3 indicating the lowest. The line in the middle of each box plot represents the median poverty rate of schools for each Level. The graph shows that Level 1 schools 
+             on average have the lowest poverty rates, followed by Level 2 schools, with Level 3 schools having the highest poverty rates. Once again, this shows how schools are influenced by the demographics of their surrounding areas. 
+             This could also suggest that schools in areas with higher poverty rates have less funding, attributing to their lower performance level rating. It could also suggest that teachers and parents who live and ....
+           </p>
+        </div>
+        <div class="col"><iframe src="safety_vs_environment_page.html" width="500" height="400" frameborder="0"></iframe></div>
+     </div>
+
+
 <div class="row">
 	<div class="col">
 		<img src="img_race.png" width="300" height="300" class=" mr-auto d-block border-0 rounded-0 ">
