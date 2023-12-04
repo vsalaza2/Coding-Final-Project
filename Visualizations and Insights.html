@@ -30,7 +30,7 @@
     <div id="carousel-ID" class="carousel slide" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://2.bp.blogspot.com/-qJKJ7srpf60/UQf80AWUB3I/AAAAAAAABQc/41g8OsYBWW0/s1600/Logo_jpeg_color.jpg" class="d-block w-100" alt="carousel image" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Chicago_city_view.jpg/800px-Chicago_city_view.jpg" class="d-block w-100" alt="carousel image" />
                 <div class="carousel-caption d-none d-md-block">
                 </div>
             </div>
@@ -111,23 +111,50 @@
              Again studying poverty rates, this visualization plots the poverty rates for schools with the same CPS Performance Policy Status, with Level 1 indicating the highest performing 
              schools, and Level 3 indicating the lowest. The line in the middle of each box plot represents the median poverty rate of schools for each Level. The graph shows that Level 1 schools 
              on average have the lowest poverty rates, followed by Level 2 schools, with Level 3 schools having the highest poverty rates. Once again, this shows how schools are influenced by the demographics of their surrounding areas. 
-             This could also suggest that schools in areas with higher poverty rates have less funding, attributing to their lower performance level rating. It could also suggest that teachers and parents who live and ....
+             This could also suggest that schools in areas with higher poverty rates have less funding, attributing to their lower performance level rating. 
            </p>
         </div>
-        <div class="col"><iframe src="performance_poverty_page.html" width="500" height="400" frameborder="0"></iframe></div>
+        <div class="col"><iframe src="safety_vs_environment_page.html" width="500" height="400" frameborder="0"></iframe></div>
      </div>
 
 
-<div class="row">
-	<div class="col">
-		<img src="img_race.png" width="300" height="300" class=" mr-auto d-block border-0 rounded-0 ">
-	</div>
-    <div class="row">
-        <div class="col"><img src="img_vstrong_race.png" width = '700' height = '700' class="img-fluid mr-auto d-block border-0 rounded-0"></div>
-        <div class="col-md-9">
-            <img src="img_vweak_race.png" width = '500' height = '500' class="img-fluid mr-auto d-block border-0 rounded-0"></div>
+
+
+     <div class='my-5'></div>
+     <h2>Racial Composition</h2>
+     <p>
+        Along with the poverty levels of zip codes, the data on demographics includes the racial composition of each zip code in Chicago. 
+     </p>
+     <div class="row">
+        <div class="col-md-7">
+            <div class="col"><iframe src="img_vstrong_race.html" width="500" height="500" frameborder="0"></iframe></div>
         </div>
-</div>
+        <div class="col"><iframe src="img_vweak_race.html" width="500" height="500" frameborder="0"></iframe></div>
+     </div>
+     <p>
+        These plots display the average racial composition of each of zip code, broken down by the average safety icon of the schools in that zipcode.
+        Safety icons are a rating that come from the safety scores of the student perception survery, with a safety score 80 or above associated with a 
+        "Very Strong" Safety Icon, and a safety score below 20 associated with a "Very Weak" Safety Icon. Comparing the zip codes with an average "Very Strong" and "Very Weak" 
+        Safety Icon scorings, we can see that there is a vast difference in the average racial composition. For zip codes with schools rated "Very Strong", the majority have a 
+        primarily white make-up, with 16 out of 21 of the zip codes having a white majority. However, for the zip codes with a "Very Weak" Safety Icon rating, only 2 out of 12 zip codes having a white majority. 
+        For this rating, the other 10 zip codes all have a black majority, with 7 being over 90% black. This shows that schools in primarily black neighborhoods appear to have a lower
+        safety rating. This could suggest that these areas are seen as less safe potentially due to stereotypes of having gang associations or "slums".
+     </p>
+
+     <div class='my-5'></div>
+     <div class="row">
+        <div class="col"><iframe src="img_race.html" width="500" height="400" frameborder="0"></iframe></div>
+        <div class="col-md-7">
+            <p>
+                To find out where these zip codes are located, this map combines the zip codes into wards and displays the majority race in each ward. The map shows that wards have either a white majority (yellow) or a black
+                majority (red). Looking at the map,it is apparent that these majority black disctricts are located soley on the South Side of Chicago. Therefore, the lower safety ratings are likely due to the
+                areas that these schools are in, as the South Side is typically viewed as more dangerous and has higher levels of crime. 
+            </p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+
 </body>
+</html>
 </html>
 
